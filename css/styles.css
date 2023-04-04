@@ -28,6 +28,14 @@ body {
     background-color: var(--color-white)
 }
 
+.hero-button, .note-big {display: inline-block;
+}
+
+
+.container {align-items: center;}
+
+
+
 /*reset*/
 .link {
     text-decoration: none;
@@ -35,6 +43,8 @@ body {
 
 .list {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .note {
@@ -133,11 +143,26 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white);
-}
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-bottom: 48px;
+    padding-right: 472px;
+    width: 1440px;
+    margin-top: 0;
+    margin-bottom: 0;
+         }
 
 .hero-dark-bg {
     background: var(--color-navy-blue);
+      
 }
+/*{position: absolute;
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 72px;
+    border-color: tomato;}*/
+
 
 .hero-button {
     font-family: var(--font-famaly-body);
@@ -148,7 +173,13 @@ body {
     font-size: 16px;
     letter-spacing: 0.04em;
     color: var(--color-white);
-}
+   margin-bottom: 188px; 
+   margin-left: 635px;
+   margin-right: 636px;
+          min-width: 169px;
+        height: 56px;
+ padding: 0;}
+
 
 
 
@@ -177,17 +208,30 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: var(--color-navy-blue);
+    color: var(--color-navy-blue);}
+    
+    .note-big-size-do{
+
+    width: 1440px;
+padding: 120px,558px,72px,559px;
+margin-top: 120px;
+margin-bottom: 72px;
 }
 
 .our-team {
     background-color: var(--color-cloud);
+
 }
 
 .our-team-background {
     background-color: var(--color-white);
 }
-
+.note-big-size-team {height: 40px;
+    width: 1440px;
+    left: 639px;
+    top: 1668px;
+   margin-top: 120px;   
+margin-bottom: 72px; }
 
 /*footer*/
 .note-small {

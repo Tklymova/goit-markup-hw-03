@@ -7,18 +7,20 @@
     <title>Web Studio (Version 3.0)</title>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://H.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Top Line-->
     <header>
       <!--Menu Nav-->
-      <nav>
+      <div class="container">
+          <nav>
         <!--logo-->
         <a href="./index.html" class="logo-studio-dark logo-web link">
           Web<span class="logo-studio-dark">Studio</span></a
@@ -49,15 +51,18 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
     <main>
       <!--Hero image-->
+      <div class="container">
       <section class="hero-dark-bg">
         <h1 class="main-inscription">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-button">Order Service</button>
       </section>
-
+    </div>
       <!--Feature-->
+      <div class="container">
       <section>
         <h2 class="note">Studio</h2>
         <ul class="list">
@@ -91,9 +96,11 @@
           </li>
         </ul>
       </section>
-      <!--Wot are we doing-->
-      <section>
-        <h2 class="note-big">What are we doing</h2>
+    </div>
+      <!--What are we doing-->
+      <div class="container">
+      <section >
+        <h2 class="note-big note-big-size-do">What are we doing</h2>
         <ul class="list">
           <li>
             <img
@@ -121,9 +128,11 @@
           </li>
         </ul>
       </section>
+    </div>
       <!--our team-->
-      <section class="our-team">
-        <h2 class="note-big">Our Team</h2>
+      <div class="container">
+            <section class="our-team">
+        <h2 class="note-big note-big-size-team">Our Team</h2>
         <ul class="list">
           <li class="our-team-background">
             <img
@@ -167,6 +176,7 @@
           </li>
         </ul>
       </section>
+    </div>
     </main>
     <footer class="dark-bg">
       <!--Logo-->
