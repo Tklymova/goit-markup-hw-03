@@ -28,11 +28,17 @@ body {
     background-color: var(--color-white)
 }
 
-.hero-button, .note-big {display: inline-block;
+
+.container {
+    align-items: center;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
-
-.container {align-items: center;}
+img {
+    display: block;
+}
 
 
 
@@ -47,13 +53,28 @@ body {
     margin: 0px;
 }
 
-.note {
-    display: none;
+.note 
+    {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
 
-/*.cursor{
-    font-style: normal;
-}*/
 
 /*logo*/
 
@@ -98,8 +119,15 @@ body {
 
 
 /*Header*/
+.header-nav {
+    border-bottom: 1px solid var(--color-cornflower);
+}
 
 /*navigation*/
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
 
 .link-nav {
     width: 48px;
@@ -137,31 +165,22 @@ body {
 /*main*/
 /*Hero image*/
 
-.main-inscription {
-     font-size: 56px;
+.my-inscription {
+    font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white);
-    padding-top: 188px;
-    padding-left: 472px;
-    padding-bottom: 48px;
-    padding-right: 472px;
-    width: 1440px;
-    margin-top: 0;
-    margin-bottom: 0;
-         }
+    max-width: 496px;
+    margin: 0 auto 48px;
+
+}
 
 .hero-dark-bg {
     background: var(--color-navy-blue);
-      
+    padding: 188px 0 188px 0;
+
 }
-/*{position: absolute;
-    width: 1440px;
-    height: 600px;
-    left: 0px;
-    top: 72px;
-    border-color: tomato;}*/
 
 
 .hero-button {
@@ -173,12 +192,12 @@ body {
     font-size: 16px;
     letter-spacing: 0.04em;
     color: var(--color-white);
-   margin-bottom: 188px; 
-   margin-left: 635px;
-   margin-right: 636px;
-          min-width: 169px;
-        height: 56px;
- padding: 0;}
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
+}
 
 
 
@@ -192,6 +211,9 @@ body {
 
 
 /*Feature*/
+.feature{
+    padding: 120px 0 0 0;
+}
 
 .note-medium {
     font-weight: 500;
@@ -203,35 +225,39 @@ body {
 }
 
 .note-big {
-     font-size: 36px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: var(--color-navy-blue);}
-    
-    .note-big-size-do{
+    color: var(--color-navy-blue);
+   }
 
-    width: 1440px;
-padding: 120px,558px,72px,559px;
-margin-top: 120px;
-margin-bottom: 72px;
-}
+   .are-we-doing {
+    padding: 120px 0 120px 0;}
+
+    .note-big-are-we-doing {
+      
+        margin-bottom:  72px;
+        padding-left: auto;
+        padding-right: auto;
+  }
+
 
 .our-team {
     background-color: var(--color-cloud);
+    padding: 120px 0 120px 0;
+   
 
 }
 
 .our-team-background {
     background-color: var(--color-white);
 }
-.note-big-size-team {height: 40px;
-    width: 1440px;
-    left: 639px;
-    top: 1668px;
-   margin-top: 120px;   
-margin-bottom: 72px; }
+
+.note-big-team {margin-bottom: 72px;
+   
+}
 
 /*footer*/
 .note-small {
@@ -240,7 +266,10 @@ margin-bottom: 72px; }
 
 .dark-bg {
     background: var(--color-navy-blue);
+    padding: 100px 0 100px 0;
 }
+.note-small-size {margin-top: 16px;
+ max-width: 264px ;}
 
 /*portfolio*/
 .filter-btn-all {
