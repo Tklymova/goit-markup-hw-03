@@ -9,8 +9,7 @@
     --color-light-slate: #8e8f99;
     --color-cornflower: #e7e9fc;
     --color-cloud: #f4f4fd;
-    --color-navy-blue-modal: #2e2f42;
-    --color-grey: #2e2f42;
+    --color-navy-blue-modal: #2e2f42;    --color-grey: #2e2f42;
     --color-white: #ffffff;
     --color-dairy: #fcfcfc;
     /*font*/
@@ -23,6 +22,7 @@
     --feature-items: 4;
     --aredoing-items: 3;
     --ourtem-items: 4;
+    --portfolio-items: 3;
 }
 
 body {
@@ -95,6 +95,7 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-navy-blue);
+
 }
 
 .logo-studio-white {
@@ -147,9 +148,11 @@ p {
 .nav-size {
     display: flex;
     gap: 40px;
-    padding: var(--size-padding-nav)
 }
 
+.nav-size-li {
+    padding: --var(--size-padding-nav);
+}
 
 .link-nav {
     width: 48px;
@@ -231,8 +234,6 @@ p {
     margin: 0 auto;
     cursor: pointer
 }
-
-
 
 
 .hero-button:hover,
@@ -349,6 +350,17 @@ p {
 }
 
 /*portfolio*/
+.section-button {
+    padding: 96px 0px 120px;
+}
+
+.section-button-size {
+    display: flex;
+    justify-content: center;
+    gap: var(--indent);
+}
+
+
 .filter-btn-all {
     font-family: var(--font-famaly-body);
     background-color: var(--color-cloud);
@@ -367,6 +379,7 @@ p {
 
 .paragraff-portfolio {
     color: var(--color-slate);
+
 }
 
 
@@ -375,4 +388,23 @@ p {
     background: var(--color-ocean);
     color: var(--color-white);
     cursor: pointer;
+}
+
+.img-marketing-size {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--indent);
+    row-gap: 48px;
+}
+
+.img-marketing-item {
+    width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-items));
+}
+
+.marketing-sign {
+    padding: 32px 16px;
+}
+
+.note-medium-sign {
+    margin-bottom: 8px;
 }
