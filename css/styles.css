@@ -16,6 +16,8 @@
     /*font*/
     --font-famaly-body: 'Roboto',
         sans-serif;
+        /*size*/
+   --size-padding-blok: 120px 0 120px 0;
 }
 
 body {
@@ -142,6 +144,7 @@ p {
 .link-nav:focus {
     color: var(--color-ocean);
     border-radius: 2px;
+    cursor: pointer;
 }
 
 
@@ -207,12 +210,12 @@ p {
     background: var(--color-ocean);
     cursor: pointer;
 }
-
+ 
 
 
 /*Feature*/
 .feature{
-    padding: 120px 0 0 0;
+    padding: var(--size-padding-blok) ;
 }
 
 .note-medium {
@@ -234,7 +237,7 @@ p {
    }
 
    .are-we-doing {
-    padding: 120px 0 120px 0;}
+    padding: var(--size-padding-blok);}
 
     .note-big-are-we-doing {
       
@@ -246,7 +249,7 @@ p {
 
 .our-team {
     background-color: var(--color-cloud);
-    padding: 120px 0 120px 0;
+    padding: var(--size-padding-blok);
    
 
 }
