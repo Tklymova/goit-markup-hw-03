@@ -17,8 +17,7 @@
         sans-serif;
     /*size*/
     --size-padding-blok: 120px 0 120px 0;
-    --size-padding-nav: 24px 0;
-    --indent: 24px;
+     --indent: 24px;
     --feature-items: 4;
     --aredoing-items: 3;
     --ourtem-items: 4;
@@ -154,7 +153,7 @@ a.logo-studio-dark {margin-right: 76px ;}
 }
 
 .nav-size-li {
-    padding: --var(--size-padding-nav);
+    padding: 24px 0;
 }
 
 .link-nav {
@@ -183,8 +182,7 @@ a.logo-studio-dark {margin-right: 76px ;}
 .adress-size {
     display: flex;
     gap: 40px;
-    padding: var(--size-padding-nav)
-}
+    }
 
 
 
