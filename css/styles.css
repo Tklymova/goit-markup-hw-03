@@ -284,6 +284,7 @@ p {
 .note-medium-team {
     margin-bottom: 8px;
 }
+.note-medium-team {text-align: center}
 
 .note-big {
     font-size: 36px;
@@ -294,9 +295,9 @@ p {
     color: var(--color-navy-blue);
 }
 
-/*.paragraff {
+.paragraff {
     text-align: center;
-}*/
+}
 
 .are-we-doing {
     padding: var(--size-padding-blok);
@@ -397,13 +398,14 @@ p {
 
 .img-marketing-item {
 width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-items));
-    border: 1px solid var(--color-cornflower);
-    max-width: 360px;
+        max-width: 360px;
     }
 
 .marketing-sign {
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
     max-width: 360px;
+    border: 1px solid var(--color-cornflower);
+    border-top: none;
 }
 
 .note-medium-sign {
@@ -412,5 +414,6 @@ width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-item
 
 .paragraff-portfolio {
     color: var(--color-slate);
+    
 }
 
