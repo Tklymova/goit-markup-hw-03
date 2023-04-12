@@ -52,6 +52,8 @@ img {
 /*reset*/
 .link {
     text-decoration: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .list {
@@ -276,8 +278,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-    text-align: center;
-}
+   }
 
 .note-medium-feature,
 .note-medium-team {
@@ -293,9 +294,9 @@ p {
     color: var(--color-navy-blue);
 }
 
-.paragraff {
+/*.paragraff {
     text-align: center;
-}
+}*/
 
 .are-we-doing {
     padding: var(--size-padding-blok);
@@ -345,7 +346,7 @@ p {
 }
 
 .logo-div-footer {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -392,13 +393,17 @@ p {
     flex-wrap: wrap;
     column-gap: var(--indent);
     row-gap: 48px;
-}
+   }
 
 .img-marketing-item {
-    width: calc((100%-48px)/3)}
+width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-items));
+    border: 1px solid var(--color-cornflower);
+    max-width: 360px;
+    }
 
 .marketing-sign {
-    padding: 32px 0;
+    padding: 32px 0 32px 16px;
+    max-width: 360px;
 }
 
 .note-medium-sign {
