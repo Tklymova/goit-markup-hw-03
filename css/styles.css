@@ -9,7 +9,8 @@
     --color-light-slate: #8e8f99;
     --color-cornflower: #e7e9fc;
     --color-cloud: #f4f4fd;
-    --color-navy-blue-modal: #2e2f42;    --color-grey: #2e2f42;
+    --color-navy-blue-modal: #2e2f42;
+    --color-grey: #2e2f42;
     --color-white: #ffffff;
     --color-dairy: #fcfcfc;
     /*font*/
@@ -17,7 +18,7 @@
         sans-serif;
     /*size*/
     --size-padding-blok: 120px 0 120px 0;
-     --indent: 24px;
+    --indent: 24px;
     --feature-items: 4;
     --aredoing-items: 3;
     --ourtem-items: 4;
@@ -96,9 +97,12 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-navy-blue);
-   
+
 }
-a.logo-studio-dark {margin-right: 76px ;}
+
+a.logo-studio-dark {
+    margin-right: 76px;
+}
 
 .logo-studio-white {
     color: var(--color-cloud);
@@ -150,11 +154,10 @@ a.logo-studio-dark {margin-right: 76px ;}
 .nav-size {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
+
 }
 
-.nav-size-li {
-    padding: 24px 0;
-}
 
 .link-nav {
     width: 48px;
@@ -182,7 +185,7 @@ a.logo-studio-dark {margin-right: 76px ;}
 .adress-size {
     display: flex;
     gap: 40px;
-    }
+}
 
 
 
@@ -277,13 +280,16 @@ a.logo-studio-dark {margin-right: 76px ;}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-   }
+}
 
 .note-medium-feature,
 .note-medium-team {
     margin-bottom: 8px;
 }
-.note-medium-team {text-align: center}
+
+.note-medium-team {
+    text-align: center
+}
 
 .note-big {
     font-size: 36px;
@@ -377,7 +383,7 @@ a.logo-studio-dark {margin-right: 76px ;}
     color: var(--color-iris);
     border: 1px solid var(--color-cornflower);
     padding: 12px 24px;
-    
+
 }
 
 .filter-btn-all:hover,
@@ -389,16 +395,16 @@ a.logo-studio-dark {margin-right: 76px ;}
 }
 
 .img-marketing-size {
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     column-gap: var(--indent);
     row-gap: 48px;
-   }
+}
 
 .img-marketing-item {
-width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-items));
-        max-width: 360px;
-    }
+    width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-items));
+    max-width: 360px;
+}
 
 .marketing-sign {
     padding: 32px 16px;
@@ -413,6 +419,5 @@ width: calc((100%-var(--indent)*(var(--portfolio-items)-1))/var(--portfolio-item
 
 .paragraff-portfolio {
     color: var(--color-slate);
-    
-}
 
+}
